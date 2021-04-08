@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="I_Feel_Great_App.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="LightBlue" Padding="24" CornerRadius="0">
+            <Label Text="Do You Feel Great Today?" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
+        </Frame>
+        <Label Text="Please select Yes or No" HorizontalTextAlignment="Center" FontSize="Title" TextColor="Black" Padding="30,10,30,10"/>
+        <Button Text="Yes"
+                TextColor="LimeGreen"
+                FontSize="25"
+                BackgroundColor="White"
+                Padding="30,10,30,10"
+                Clicked="Yes_OnClicked"/>
+        <Button Text="No"
+                TextColor="Red"
+                FontSize="25"
+                Padding="30,10,30,10"
+                BackgroundColor="White"
+                Clicked="No_OnClicked"/>
+    </StackLayout>
+
+</ContentPage>
